@@ -13,6 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Http\Controllers\WorkController;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/works', function () {
+    return view('works');
+});
+
+Route::get('/works/1', [WorkController::class, 'show_detail']);
+Route::get('/works/2', [WorkController::class, 'show_detail']);
+Route::get('/works/3', [WorkController::class, 'show_detail']);
+Route::get('/works/4', [WorkController::class, 'show_detail']);
+Route::get('/works/5', [WorkController::class, 'show_detail']);
+Route::get('/works/6', [WorkController::class, 'show_detail']);
+Route::get('/works/7', [WorkController::class, 'show_detail']);
+
+

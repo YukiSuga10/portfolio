@@ -1,0 +1,272 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Euphoria Party';
+	src: url('../fonts/EuphoriaParty-1Geng.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-family: Euphoria Party;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.pc { 
+	display: block !important;
+	margin-top:auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vh;
+}
+.sp { display: none !important; }
+
+.title h3{
+    font-family: Euphoria Party;
+    font-size: 10rem;
+    margin-top: 6%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.main_content{
+    height: 100%;
+}
+
+.human_image img{
+    margin-left: 5%;
+}
+
+.human_image{
+    overflow:hidden;
+    flex: 1;
+}
+
+.main{
+    display: flex;
+    padding-left: 10%;
+}
+
+.intro_text h6{
+    color: #F87031;
+    font-size: 4rem;
+    font-family: 'Euphoria Party';
+}
+
+.intro_text p{
+    font-size: 2vw;
+    word-break: break-word;
+    word-wrap: break-word;
+    width: 100%;
+    line-height: 1.7;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.main_image{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.part{
+    display: inline-block;
+    text-align: center;
+}
+
+.part p{
+    font-family: Hiragino Sans;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+
+/*フッター*/
+html{
+	position: relative;
+}
+
+.footer-content{
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+}
+
+.footer-content p{
+    font-family: Hiragino Sans;
+	margin-bottom: 5%;
+	color: #F87031;
+}
+
+  
+
+/*タブレットレイアウト*/
+@media only screen and (max-width: 960px) {
+    /*ヘッダー画像*/
+    .pc { display: none !important; }
+    .sp { 
+		display: block !important;
+		width: 17%;
+        margin: auto;
+        padding-top: 3vh;
+	}
+
+    .title h3{
+        font-family: Euphoria Party;
+        font-size: 700%;
+        margin-top: 7%;
+        margin-left: 7%;
+        margin-bottom: 3%;
+        padding-top: 2%;
+    }
+
+    
+
+    .main_image img{
+        width: 60%;
+    }
+
+    /*フッター*/
+    html{
+        position: relative;
+        height: 100%;
+    }
+
+    .footer-content{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 31%;
+    }
+
+    .footer-content p{
+        font-family: Hiragino Sans;
+        margin-bottom: 5%;
+        color: #F87031;
+    }
+}
+
+
+
+/*スマートフォンレイアウト*/
+@media only screen and (max-width: 520px) {
+    /*ヘッダー画像*/
+    .pc { display: none !important; }
+    .sp { 
+		display: block !important;
+		width: 20%;
+        margin: auto;
+        padding-top: 3vh;
+	}
+
+    .title h3{
+        font-family: Euphoria Party;
+        font-size: 5rem;
+        margin-top: 6%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+
+    
+
+    .intro_text h6{
+        color: #F87031;
+        font-size: 2rem;
+    }
+    
+    .intro_text p{
+        font-size: 3vw;
+        word-break: break-word;
+        word-wrap: break-word;
+        width: 100%;
+        line-height: 1.7;
+        font-weight: bold;
+        margin-top: 3%;
+    }
+    
+    .main {
+        padding-left: 0%;
+    }
+
+    .main img{
+        width: 50%;
+    }
+
+    .main_image{
+        margin-top: 10%;
+
+    }
+
+    .part{
+        width: 40%;
+    }
+    
+    /*フッター*/
+    html{
+        position: relative;
+    }
+
+    .footer-content{
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+    }
+
+    .footer-content p{
+		font-family: Hiragino Sans;
+		font-size: 8px;
+        margin-bottom: 5%;
+        color: #F87031;
+    }
+}
+
+
+
+
+
