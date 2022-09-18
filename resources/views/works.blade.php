@@ -51,7 +51,10 @@
                   
                       <div class="square_contents">
                           <a class="square_image" href="works/1"><img src="./image/年賀状portfolio.PNG"></a>
-                          <a class="square_image" href="works/2"><img src="./image/サケアテヤ.JPEG"></a>
+                          <div class="mask">
+                            <div class="caption">NEW YEAR'S CARD</div>
+                          </div>
+                          <a class="square_image" href="works/2"><img src="./image/サケアテヤ.JPEG" ></a>
                           <a class="square_image" href="works/3"><img src="./image/pafu-mockup.JPEG"></a>
                           <a class="square_image" href="works/4"><img src="./image/説明書MockUp.JPEG"></a>
                           <a class="square_image" href="works/5"><img src="./image/work13.PNG"></a>
