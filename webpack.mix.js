@@ -16,6 +16,16 @@ mix.js('resources/js/app.js', 'public/js')
         //
     ]);
 
+mix.styles(
+    'public/css/app.css', 
+    'public/css/about.css', 
+    'public/css/base.css', 
+    'public/css/common.css',
+    'public/css/nav.css',
+    'public/css/style.css',
+    'public/css/work_content.css',
+    'public/css/works.css')
+
     if (mix.inProduction()) {
         mix.version();
       }
