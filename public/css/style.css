@@ -1,8 +1,5 @@
 @charset "utf-8";
-@font-face {
-	font-family: 'Euphoria Party';
-	src: url("{{ asset('fonts/EuphoriaParty-1Geng.ttf') }}") format('truetype');
-}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
