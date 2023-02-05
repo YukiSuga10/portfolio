@@ -8,7 +8,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
+        <link href="{{ asset('css/contacts.css') }}" rel="stylesheet">
         <link href="{{ asset('css/base.css') }}" rel="stylesheet">
         <link href="{{ asset('css/common.css') }}" rel="stylesheet">
 
@@ -23,42 +24,65 @@
             }
         </style>
     </head>
-    <body style="position: fixed;">
-        <div id="main">
+    <body>
+      <div class="main_content">
+          <!--ヘッダー部分 -->
           <header class="site_header">
-          <div class="openbtn1"><span></span><span></span><span></span></div>
-          <nav id="g-nav">
-            <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-              <ul>
-                <li><a href="/">Top</a></li> 
-                <li><a href="/about">About</a></li> 
-                <li>
-                  <form method="POST" name="a_form" action="">
-                    <a href="/works" onclick="">Service</a>
-                  </form>
-                </li> 
-                <li><a href="/contacts">Inquiry</a></li>
-              </ul>
-            </div>
-          </nav>
+                  <a href="/"><img class="pc" src="./image/logo.svg" alt="パソコン用の画像" width="10%"></a>
+                  <a href="/"><img class="sp" src="./image/logo_500px.png" alt="スマートフォン用の画像" width="10%" ></a>
+              <div class="openbtn1"><span></span><span></span><span></span></div>
+              <nav id="g-nav">
+              <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                  <ul>
+                    <li><a href="/">Top</a></li> 
+                    <li><a href="/about">About</a></li> 
+                    <li>
+                      <form method="POST" name="a_form" action="">
+                        <a href="/works" onclick="">Service</a>
+                      </form>
+                  </ul>
+              </div>
+              </nav>
           </header>
-      
-          <section class="main">
-            <div class="top_text">
-              <p>HAYATO<br>YAGI<br>PORT<br>FOLIO</p>    
-            </div>
-              <img class="pc" src="./image/logo.svg" alt="パソコン用の画像" width="43%">
-              <img class="sp" src="./image/logo_500px.png" alt="スマートフォン用の画像" >
-          </section>
-      
-          <div class="footer_wrapper">
-            <footer class="footer-content">
-              <p>©️ HAYATOYAGI PORTFOLIO 2022</p>
-            </footer>
-          </div>
-          <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-          <!--自作のJS-->
-          <script src="js/nav.js"></script>
-        </div>
-      </body>
+          <main>
+              <div class="main_content">
+                  <div class="title">
+                      <h3>Contact Me</h3>
+                  </div>
+                <form method="POST" action="/contact">
+                  {{ csrf_field() }}
+                  <div class="Form">
+                    <div class="Form-Item">
+                      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>お名前</p>
+                      <input type="text" name = 'request[name]' class="Form-Item-Input" placeholder="例）山田太郎" required>
+                    </div>
+                    <div class="Form-Item">
+                      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+                      <input type="text" name = 'request[phone]' class="Form-Item-Input" placeholder="例）000-0000-0000" required>
+                    </div>
+                    <div class="Form-Item">
+                      <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+                      <input type="email" name = 'request[email]' class="Form-Item-Input" placeholder="例）example@gmail.com" required>
+                    </div>
+                    <div class="Form-Item">
+                      <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+                      <textarea name = 'request[detail]' class="Form-Item-Textarea" required></textarea>
+                    </div>
+                    <input type="submit" class="Form-Btn" value="送信する">
+                  </div>
+                </form>
+              </div>
+          </main>
+      </div>
+      <div class="footer_wrapper">
+          <footer class="footer-content">
+            <p>©️ HAYATOYAGI PORTFOLIO 2022</p>
+          </footer>
+      </div>
+  
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <!--自作のJS-->
+      <script src="js/nav.js"></script>
+      <script src="js/lightbox.js"></script>
+  </body>
 </html>

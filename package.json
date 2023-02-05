@@ -16,5 +16,8 @@
         "postcss": "^8.4.16",
         "sass-loader": "^13.0.2",
         "webpack": "^5.74.0"
+    },
+    "dependencies": {
+        "lightbox2": "^2.11.3"
     }
 }

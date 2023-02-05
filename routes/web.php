@@ -25,6 +25,10 @@ Route::get('/about', function () {
 Route::get('/works', function () {
     return view('works');
 });
+Route::get("/contacts", function(){
+    return view('contacts');
+});
+Route::post("/contact", [WorkController::class, 'request']);
 
 Route::get('/works/1', [WorkController::class, 'show_detail']);
 Route::get('/works/2', [WorkController::class, 'show_detail']);

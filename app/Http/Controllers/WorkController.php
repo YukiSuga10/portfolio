@@ -20,4 +20,8 @@ class WorkController extends Controller
         return view("work_detail")->with(["work" => $work]);
 
     }
+
+    public function request(Request $request){
+        dd($request['request']);
+    }
 }

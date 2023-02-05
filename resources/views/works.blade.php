@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('css/lightbox.css') }}">
         <link href="{{ asset('css/works.css') }}" rel="stylesheet">
         <link href="{{ asset('css/base.css') }}" rel="stylesheet">
         <link href="{{ asset('css/common.css') }}" rel="stylesheet">
@@ -48,19 +49,50 @@
                   <div class="title">
                       <h3>WORKS</h3>
                   </div>
-                  
+                  <div class="square">
                       <div class="square_contents">
-                          <a class="square_image" href="works/1"><img src="./image/年賀状portfolio.PNG"></a>
+                          <a class="square_image" href="./image/detail/work1_detail.png" data-lightbox="demo"><img src="./image/年賀状portfolio.PNG" ></a>
                           <div class="mask">
                             <div class="caption">NEW YEAR'S CARD</div>
                           </div>
-                          <a class="square_image" href="works/2"><img src="./image/サケアテヤ.JPEG" ></a>
-                          <a class="square_image" href="works/3"><img src="./image/pafu-mockup.JPEG"></a>
-                          <a class="square_image" href="works/4"><img src="./image/説明書MockUp.JPEG"></a>
-                          <a class="square_image" href="works/5"><img src="./image/work13.PNG"></a>
-                          <a class="square_image" href="works/6"><img src="./image/work1.PNG"></a>
-                          <a class="square_image" href="works/7"><img src="./image/work12.PNG"></a>
                       </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/2"><img src="./image/サケアテヤ.JPEG" ></a>
+                          <div class="mask">
+                            <div class="caption">Title2</div>
+                          </div>
+                      </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/3"><img src="./image/pafu-mockup.JPEG"></a>
+                          <div class="mask">
+                            <div class="caption">Title3</div>
+                          </div>
+                      </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/4"><img src="./image/説明書MockUp.JPEG"></a>
+                          <div class="mask">
+                            <div class="caption">Title4</div>
+                          </div>
+                      </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/5"><img src="./image/work13.PNG"></a>
+                          <div class="mask">
+                            <div class="caption">Title5</div>
+                          </div>
+                      </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/6"><img src="./image/work1.PNG"></a>
+                          <div class="mask">
+                            <div class="caption">Title6</div>
+                          </div>
+                      </div>
+                      <div class="square_contents">
+                          <a class="square_image" href="works/7"><img src="./image/work12.PNG"></a>
+                          <div class="mask">
+                            <div class="caption">Title7</div>
+                          </div>
+                      </div>
+                  </div>
               </div>
           </main>
       </div>
@@ -73,5 +105,6 @@
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <!--自作のJS-->
       <script src="js/nav.js"></script>
+      <script src="js/lightbox.js"></script>
   </body>
 </html>
