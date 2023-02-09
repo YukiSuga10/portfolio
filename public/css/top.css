@@ -1,0 +1,21 @@
+.container {
+    background-color:#FEF3DD;
+    height: 100%;
+}
+.first-view-img {
+    text-align: center;
+}
+.first-view-img img {
+    width: 70%;
+    height: auto;
+    padding-top: 5rem;
+}
+@media screen and (max-width:1000px) {
+    .container {
+        height: 172vw;
+    }
+    .first-view-img img {
+    width: 100vw;
+    padding-top: 20vh;
+    }
+}

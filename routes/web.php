@@ -25,17 +25,33 @@ Route::get('/about', function () {
 Route::get('/works', function () {
     return view('works');
 });
-Route::get("/contacts", function(){
-    return view('contacts');
+Route::get("/contact", function(){
+    return view('contact');
 });
 Route::post("/contact", [WorkController::class, 'request']);
 
-Route::get('/works/1', [WorkController::class, 'show_detail']);
-Route::get('/works/2', [WorkController::class, 'show_detail']);
-Route::get('/works/3', [WorkController::class, 'show_detail']);
-Route::get('/works/4', [WorkController::class, 'show_detail']);
-Route::get('/works/5', [WorkController::class, 'show_detail']);
-Route::get('/works/6', [WorkController::class, 'show_detail']);
-Route::get('/works/7', [WorkController::class, 'show_detail']);
+
+// worksの表示ルーティング
+Route::get("/works/sakeateya", function(){
+    return view('worksopen_sakeateya');
+});
+Route::get("/works/pafu", function(){
+    return view('worksopen_pafu');
+});
+Route::get("/works/hunglymenu", function(){
+    return view('worksopen_hunglymenu');
+});
+Route::get("/works/sugutabe", function(){
+    return view('worksopen_sugutabe');
+});
+Route::get("/works/yazy", function(){
+    return view('worksopen_yazy');
+});
+Route::get("/works/pizza", function(){
+    return view('worksopen_pizza');
+});
+Route::get("/works/banner", function(){
+    return view('worksopen_banner');
+});
 
 

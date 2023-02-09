@@ -1,0 +1,47 @@
+.worksopen {
+    background-color:#FEF3DD;
+    padding-top: 10vw;
+}
+.worksopen_title {
+    padding-left: 6%;
+    margin-bottom: 4vw;
+}
+.worksopen_title h1 {
+    margin: 0;
+    font-size: 7vw;
+    font-family:noto sans jp black;
+    line-height: 7vw;
+    height: 10vw;
+    color: #001658;
+    font-weight: 700;
+}
+.worksopen_title p {
+    color: #001658;
+    font-size: 1.5vw;
+    padding: 0 5% 0 0;
+    line-height: 2.7vw;
+}
+.works_content_pafu img {
+    width: 100vw;
+    padding: 0 5% 7%;
+}
+.works-content_pafu2 img {
+    width: 100vw;
+    padding: 0 5% 7%;
+}
+@media screen and (max-width: 1000px) {
+ .worksopen_title h1 {
+    font-size: 9.6vw;
+    height: 21.5vw;
+    line-height: 8.5vw;
+ }
+ .worksopen_title p {
+    
+ }
+}
+
+@media screen and (max-width: 590px) {
+    .worksopen_title p {
+line-height: 3.2vw;
+    }
+} 

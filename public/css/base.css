@@ -1,185 +1,149 @@
-.site_header {
-    width: 100%;
-    height: 11vh;   
+header {
+   display: flex;
+   width: 100%;
+   height: 100px;
+   background-color:#001658;
+   justify-content: space-between;
+   padding: 0% 5% 0% 5%;
+   align-items: center;
 }
-
-@media only screen and (max-width: 960px) {
-
+.header-logo img {
+    width: 8rem;
 }
-
-@media only screen and (max-width: 520px) {
-    .site_header {
-        position: relative;
-        width: 100%;
-        height: 13vh;
-    }
+header nav {
+    margin-left: auto;
+    position: inherit;
 }
-/*========= ナビゲーションのためのCSS ===============*/
-
-#g-nav{
-    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
-    position:fixed;
-	z-index: -1;
-	opacity: 0;/*はじめは透過0*/
-    /*ナビの位置と形状*/
-	top:0;
-	width:100%;
-    height: 100vh;/*ナビの高さ*/
-	background:#F75409;
-    /*動き*/
-	transition: all 0.3s;
+header ul {
+    display: flex;
+    margin-top: 5%;
 }
-
-/*アクティブクラスがついたら透過なしにして最前面へ*/
-#g-nav.panelactive{
-	opacity: 1;
-	z-index:999;
+header li {
+    color: #E49B1B;
+    margin-left: 50px;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list{
-    /*ナビの数が増えた場合縦スクロール*/
-    position: fixed;
-    z-index: 999; 
-    width: 100%;
-    height: 100vh;/*表示する高さ*/
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+header ul a {
+    text-decoration: none;
 }
-
-/*ナビゲーション*/
-#g-nav ul {
+header ul svg {
+   margin-left: 30px;
+}
+.twitter-img {
+    margin-left: 40px;
+    margin-top: -4px;
+    width: 50px;
+    height: 50px;
+}
+#twitter {
+    width: 35px;
+}
+.instagram-img {
+    margin-top: -2px;
+}
+input {
     display: none;
-    /*ナビゲーション天地中央揃え*/
-    position: absolute;
-    z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
 }
-
-#g-nav.panelactive ul {
-    display: block;
-}
-
-/*リストのレイアウト設定*/
-
-#g-nav li{
-	list-style: none;
-    text-align: center; 
-    padding:0px 50px;
-}
-
-#g-nav li a{
-	color: #333;
-	text-decoration: none;
-	font-family: 'Euphoria Party';
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 12rem;
-}
-
-@media only screen and (max-width: 960px) {
-    #g-nav li a{
-        color: #333;
-        text-decoration: none;
-        
+@media screen and (max-width:1000px) {
+    header ul {
+        display: inline-block;
+        text-align: center;
+        margin-top: 15%;
+        padding-right: 10%;
+    }
+    header nav {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 99;
+        width: 100%; /* 画面幅に対して */
+        height: 170%; /* 画面の高さに対して */
+        background-color:#001658;;
+        transform: translateX(-110%);
+    }
+    header li {
+        color:#E49B1B;
+        background-color:#001658;
+        font-size: 15vw;
+        line-height: 25vw;
+        font-style: italic;
+    }
+    #contact {
+        padding-bottom: 55px;
+    }
+    .twitter-img  {
+        margin-left: 15%;
+        width: 15vw;
+        height: 15vw;
+    }
+    #twitter {
+        width: 40px;
+    }
+    .instagram-img {
+        width: 15vw;
+        height: 15vw;
+    }
+    #instagram {
+        width: 14vw;
+        height: 14vw;
+        display: inline-block;
+    }
+    #check:checked ~ nav {
+        transform: translateX(0%);
+        text-align: center;
+    }
+    label {
+        display: inline-block;
+        width: 80px;
+        height: 20px;
+        position: relative;
+    }
+    label span,span::before,span::after {
         display: block;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: 22vw;
-    }
-}
-
-/*========= ボタンのためのCSS ===============*/
-.openbtn1{
-	position: absolute;
-    z-index: 9999;/*ボタンを最前面に*/
-	top:6vh;
-	right: 3vw;
-    margin-top: auto;
-    margin-bottom: auto;
-	cursor: pointer;
-    width: 150px;
-    height:100px;
-}
-
-/*タブレットレイアウト*/
-@media only screen and (max-width: 960px) {
-    .openbtn1{
+        height: 5px;
+        width: 5rem;
+        background-color: #E49B1B;
+        content: "";
         position: absolute;
-        z-index: 9999;/*ボタンを最前面に*/
-        top:6vh;
-        right: 3vw;
-        margin-top: auto;
-        margin-bottom: auto;
-        cursor: pointer;
-        width: 150px;
-        height:75px;
+        transition: all.3s;
+    }
+    span::before {
+       display: none;
+    }
+    span::after {
+        top: 16px;
+    }
+    #check:checked + label span {
+        transform: rotate(45deg);
+        top: 10px;
+    }
+    #check:checked + label span::before {
+        display: none;  
+    }
+    #check:checked + label span::after {
+        top: 2px;
+        transform: rotate(-90deg);   
     }
 }
-
-/*スマートフォンレイアウト*/
-@media only screen and (max-width: 520px) {
-    .openbtn1{
-        position: absolute;
-        z-index: 9999;/*ボタンを最前面に*/
-        top:4vh;
-        right: 0vw;
-        margin-top: auto;
-        margin-bottom: auto;
-        cursor: pointer;
-        width: 100px;
-        height:50px;
-        
-    }
+footer {
+    background-color:#FEF3DD;
 }
-
-
-
-
-	
-/*×に変化*/	
-.openbtn1 span{
-    display: inline-block;
-    transition: all .4s;
-    position: absolute;
-    left: 14px;
-    height: 3px;
-    border-radius: 2px;
-	background-color: #F75409;
-  	width: 45%;
+footer p {
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: #001658;
+    font-size: 1.5rem;
+}
+@media screen and (max-width:1000px) {
+footer p {
+    font-size: 3.5vw;
+    position: relative;
+    bottom: 3vh;
   }
-
-.openbtn1 span:nth-of-type(1) {
-	top:15px;	
-}
-
-.openbtn1 span:nth-of-type(2) {
-	top:23px;
-}
-
-.openbtn1 span:nth-of-type(3) {
-	top:31px;
-}
-
-.openbtn1.active span:nth-of-type(1) {
-    top: 18px;
-    left: 20px;
-    transform: translateY(6px) rotate(-45deg);
-    width: 35%;
-    background-color: #111;
-}
-
-.openbtn1.active span:nth-of-type(2) {
-	opacity: 0;
-}
-
-.openbtn1.active span:nth-of-type(3){
-    top: 30px;
-    left: 20px;
-    transform: translateY(-6px) rotate(45deg);
-    width: 35%;
-    background-color: #111;
 }

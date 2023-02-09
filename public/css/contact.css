@@ -1,0 +1,477 @@
+@font-face {
+  font-family: Alfa Slab One;
+  src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+
+.about {
+    background-color:#FEF3DD;
+    padding-top: 5vw;
+}
+.about_title {
+    padding-left: 6%;
+}
+.about_title h1 {
+    margin: 0;
+    font-family: Alfa Slab One;
+    font-weight: 100;
+    color: #001658;
+    font-size: 12vw;
+    text-shadow: 1vw 1vw #E49B1B;
+}
+.about_title p {
+    margin: 0;
+    padding-bottom: 50px;
+    font-family: rubik;
+    font-size: 1.6vw;
+    line-height: 116%;
+    font-style: italic;
+    color: #203B8C;
+    bottom: 2vw;
+    position: relative;
+}
+.about_my_img {
+    display: flex;
+}
+.about_my_img img {
+    margin: 0 auto 3vw;
+    width:45vw;
+}
+/*skill*/
+.section_skill {
+    padding: 0 7%;
+}
+.section_skill h2 {
+    margin: 0;
+    margin-bottom: 5vw;
+    font-size: 8vw;
+    font-family: rubik;
+    color: #203B8C;
+}
+/*ai*/
+.ai_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 5vw;
+}
+.ai_skill_content img {
+ width: 10vw;
+ height: 10vw;
+ margin-right: 3vw;
+}
+.ai_skill_sentence h3 {
+font-size: 4.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0;
+height: 5vw;
+top: -0.7vw;
+}
+.ai_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*ps*/
+.ps_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 5vw;
+}
+.ps_skill_content img {
+ width: 10vw;
+ height: 10vw;
+ margin-right: 3vw;
+}
+.ps_skill_sentence h3 {
+font-size: 4.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0;
+height: 5vw;
+top: -0.7vw;
+}
+.ps_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*vs*/
+.vs_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 5vw;
+}
+.vs_skill_content img {
+ width: 10vw;
+ height: 10vw;
+ margin-right: 3vw;
+}
+.vs_skill_sentence h3 {
+font-size: 4.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0;
+height: 5vw;
+top: -0.7vw;
+}
+.vs_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*pr*/
+.pr_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 5vw;
+}
+.pr_skill_content img {
+ width: 10vw;
+ height: 10vw;
+ margin-right: 3vw;
+}
+.pr_skill_sentence h3 {
+font-size: 4.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0;
+height: 5vw;
+top: -0.7vw;
+}
+.pr_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*xd*/
+.xd_skill_content {
+    display: flex;
+    height: 10vw;
+    padding-bottom:15vw;
+}
+.xd_skill_content img {
+ width: 10vw;
+ height: 10vw;
+ margin-right: 3vw;
+}
+.xd_skill_sentence h3 {
+font-size: 4.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0;
+height: 5vw;
+top: -0.7vw;
+}
+.xd_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2vw;
+    line-height: 2vw;
+    color: #203B8C;
+    margin: 0;
+    }
+@media screen and (max-width: 1000px) {    
+.about_my_img img {
+    margin: 0 auto;
+    width:70vw;
+ }
+}
+@media screen and (max-width:600px) {
+    .about_my_img img {
+        margin: 0 auto;
+        width:100vw;
+     }
+     /*ai*/
+.ai_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 10vw;
+}
+.ai_skill_content img {
+ width: 15vw;
+ height: 15vw;
+ margin-right: 3vw;
+}
+.ai_skill_sentence h3 {
+font-size: 5.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0 0 1vw 0;
+height: 5vw;
+top: -0.7vw;
+}
+.ai_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*ps*/
+.ps_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 10vw;
+}
+.ps_skill_content img {
+ width: 15vw;
+ height: 15vw;
+ margin-right: 3vw;
+}
+.ps_skill_sentence h3 {
+font-size: 5.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0 0 1vw 0;
+height: 5vw;
+top: -0.7vw;
+}
+.ps_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2.7vw;
+    line-height: 3vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*vs*/
+.vs_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 10vw;
+}
+.vs_skill_content img {
+ width: 15vw;
+ height: 15vw;
+ margin-right: 3vw;
+}
+.vs_skill_sentence h3 {
+font-size: 5.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0 0 1vw 0;
+height: 5vw;
+top: -0.7vw;
+}
+.vs_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*pr*/
+.pr_skill_content {
+    display: flex;
+    height: 10vw;
+    margin-bottom: 10vw;
+}
+.pr_skill_content img {
+ width: 15vw;
+ height: 15vw;
+ margin-right: 3vw;
+}
+.pr_skill_sentence h3 {
+font-size: 5.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0 0 1vw 0;
+height: 5vw;
+top: -0.7vw;
+}
+.pr_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    color: #203B8C;
+    margin: 0;
+    }
+/*xd*/
+.xd_skill_content {
+    display: flex;
+    height: 10vw;
+    padding-bottom:25vw;
+}
+.xd_skill_content img {
+ width: 15vw;
+ height: 15vw;
+ margin-right: 3vw;
+}
+.xd_skill_sentence h3 {
+font-size: 5.5vw;
+position: relative;
+font-family: rubik;
+color: #203B8C;
+margin: 0 0 1vw 0;
+height: 5vw;
+top: -0.7vw;
+}
+.xd_skill_sentence p {
+    font-family: noto sans jp;
+    font-size: 2.8vw;
+    line-height: 3vw;
+    color: #203B8C;
+    margin: 0;
+    }
+}
+
+.Form {
+  
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form {
+      margin-top: 40px;
+    }
+  }
+  .Form-Item {
+  
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+  .Form-Item:nth-child(5) {
+  
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+  
